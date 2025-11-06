@@ -1,0 +1,14 @@
+Flask
+twilio
+pyautogui
+googlesearch-python
+secure-smtplib
+geopy
+googletrans==4.0.0-rc1
+gtts
+pycaw
+numpy
+flask-cors
+google-generativeai
+python-dotenv
+google-genai
