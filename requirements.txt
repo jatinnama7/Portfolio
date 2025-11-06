@@ -4,7 +4,6 @@ pyautogui
 googlesearch-python
 secure-smtplib
 geopy
-googletrans==4.0.0-rc1
 gtts
 pycaw
 numpy
