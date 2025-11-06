@@ -3,11 +3,11 @@ twilio
 pyautogui
 googlesearch-python
 secure-smtplib
+gunicorn
 geopy
 gtts
 pycaw
 numpy
 flask-cors
-google-generativeai
 python-dotenv
 google-genai
