@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin_Portfolio</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2d0fef1d04.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+
+<body>
+   
+<button class="button">
+  <svg viewBox="0 0 384 512" class="svgIcon">
+    <path
+      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+  </svg>
+</button>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/static/images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hey! I am <span>Jatin</span></h1>
+                <h4>I am a <span class="text"></span></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------About------------------------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-l">
+                    <img src="/static/images/image1.jpg" alt="image1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT <span>ME</span></h1>
+                    <p>I am a passionate tech enthusiast who loves to code and explore cutting-edge technologies shaping the modern world. I enjoy understanding the logic and science behind innovations and applying that knowledge to create impactful solutions. With a strong interest in Artificial Intelligence, Machine Learning, Cloud Computing, and Linux, I focus on building projects that seamlessly blend intelligence with creativity.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML</span><br>Model Development, Training & Deployment</li>
+                            <li><span>Cloud</span><br>AWS, Azure, DevOps, and Cloud-based Deployments</li>
+                            <li><span>Linux</span><br>System Administration & Shell Scripting</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current:</span><br>Developing AI-integrated projects using Python and Cloud.</li>
+                            <li><span>2024 - 2025</span><br>Explored DevOps practices and created several real-time projects.</li>
+                            <li><span>2023 - 2024</span><br>Explored ML and Cloud related technologies and had hands on with projects.</li>
+                            <li><span>2022 - 2023</span><br>Learnt Python, C++, MySQL and published two Research Papers.</li>
+                            <li><span>2019 - 2021</span><br>Built strong fundamentals in computer science.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education"> 
+                        <ul>
+                            <li><span>Current:</span><br>Pursuing B.Tech. in CSE from Poornima Institute of Engineering And Technology, Jaipur.</li>
+                            <li><span>2021</span><br>Completed High School Graduation with an aggregate of 95%.</li>
+                            <li><span>2019</span><br>Completed Matriculation with an aggregate of 93%.</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------- SERVICES ----------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">SERVICES</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>AI/ML</h2>
+                <p>I can handle AI and ML related tasks like charm. I have many created many solutions, some of them are deployed as well.</p>
+                <br><a href="https://jatinnama7-ambulance-detction-system.hf.space/">View Work</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>Cloud Deployment and Scaling</h2>
+                <p>I am good at Cloud Deployments and Scaling part. I have good experience with cloud services and data manipulation, along with containerization and CI/CD</p>
+                <br><a href="https://menu-project-beige.vercel.app/port">See Experience</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>Research</h2>
+                <p>I am good at research work. I have formatted three Research Papers and published two of them in journals.</p>
+                <br><a href="https://sciencejournals.stmjournals.in/index.php/osmj/article/view/3606">View Work</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------- PORTFOLIO ------------------------------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY <span>PROJECTS</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/static/images/work1.png" alt="image2">
+                <div class="layer">
+                    <h3>HMS App</h3>
+                    <p>A Hospital Management System streamlining operations, billing, and patient care.</p>
+                    <a href="https://github.com/jatinnama7/HMS"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="/static/images/work2.png" alt="image3">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather forecasting app using API-based data visualization.</p>
+                    <a href="https://github.com/jatinnama7/WeatherApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="/static/images/work3.png" alt="image4">
+                <div class="layer">
+                    <h3>Menu-Project</h3>
+                    <p>Integrated web technologies and cloud with Flask-based backend management.</p>
+                    <a href="/port"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/jatinnama7?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ------------------------------------------------ ACHIEVEMENTS ----------------------------------------------------->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">ACHIEVE<span>MENTS</span></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-medal"></i>
+                <h2>SIH 2024 Finalist</h2>
+                <p>Participated in Smart India Hackathon 2024 with the project ATISHA - an AI-based Career Guidance Platform.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Helping Hands Volunteer</h2>
+                <p>Led social initiatives and organized many social drives for underprivileged communities.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>AI & Cloud Contributor</h2>
+                <p>Developed innovative AI and cloud-based solutions for academic and real-world use cases.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------ CERTIFICATIONS ----------------------------------------------------->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">CERTIFICA<span>TIONS</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/static/images/cert1.png" alt="cert1">
+                <div class="layer">
+                    <h3>SIH Final 2024</h3>
+                    <a href="https://drive.google.com/file/d/1SM21Ku8KB4QQiiJw-AvnvXzsezLH_Te3/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/cert2.png" alt="cert2">
+                <div class="layer">
+                    <h3>DCGC 2.0</h3>
+                    <a href="https://drive.google.com/file/d/1RueNWg68-z41sIELYatbW0agdwLANbTC/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/cert3.png" alt="cert3">
+                <div class="layer">
+                    <h3>RHCSA</h3>
+                    <a href="https://www.credly.com/badges/5ae4c9b0-8a7a-4361-9998-bfd998883720/public_url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/cert4.png" alt="cert4">
+                <div class="layer">
+                    <h3>OCI AI Associate</h3>
+                    <a href="https://drive.google.com/file/d/1HpYpdMFroZ4ONUh4yHKFkAt29omEQbhO/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/static/images/cert5.png" alt="cert5">
+                <div class="layer">
+                    <h3>MongoDB</h3>
+                    <a href="https://drive.google.com/file/d/1JSPWNbd_yuWFi4uDLdUbThCHKa7DLuB7/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------ CONTACT ----------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT <span>ME</span></h1>
+                <p><i class="fa-solid fa-envelope"></i> jatinnama7@gmail.com</p>
+
+                <div class="social-icons">
+                    <a href="https://github.com/jatinnama7"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jatin-nama/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/jatin.nama.56"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="/static/Jatin_Resume_Updated.pdf" class="btn btn2" download="Resume">Download Resume</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="mail" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>copyright © Jatin. Made with <i class="fa-solid fa-heart"></i> by Jatin Nama</p>
+        </div>
+    </footer>
+</div>
+
+<!-- -----------------------------------------------SCRIPT------------------------------------------------------------ -->
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){ tablink.classList.remove("active-link"); }
+    for(tabcontent of tabcontents){ tabcontent.classList.remove("active-tab"); }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){ sidemenu.style.right=0; }
+function closemenu(){ sidemenu.style.right = "-200px"; }
+</script>  
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz7kNM2V01t5rdmtPWKkImFJsu0D2CD4SWJSUkSBCMOO-UXVRueB4TMUP7_Yo5wrkaKPA/exec'
+const form = document.forms['submit-to-google-sheet']
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
+</script> 
+
+<script>
+var typed = new Typed(".text",{
+  strings : ["Python Developer","Researcher","DevOps Engineer","ML Engineer","Articulate"],
+  typeSpeed : 100,
+  backSpeed : 10,
+  backDe1ay:1000,
+  loop: true
+})
+</script>
+
+<script>
+let scrollTopBtn = document.getElementsByClassName("button")[0];
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+      scrollTopBtn.style.display = "flex";
+  else
+      scrollTopBtn.style.display = "none";
+};
+scrollTopBtn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
+
+</body>
+</html>
