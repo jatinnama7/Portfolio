@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from geopy.geocoders import Nominatim
-from googletrans import Translator
+# from googletrans import Translator
 from gtts import gTTS
 import numpy as np
 import base64
@@ -176,33 +176,33 @@ def get_location():
         return jsonify({'message': f"An error occurred: {str(e)}", 'status': 'error'}), 500
 
 
-@app.route('/translate-and-speak', methods=['POST'])
-def translate_and_speak():
-    try:
-        data = request.json
-        lang1 = data.get('src_lang', 'en').strip().lower()
-        text = data.get('text', '').strip()
-        lang2 = data.get('dest_lang', 'en').strip().lower()
+# @app.route('/translate-and-speak', methods=['POST'])
+# def translate_and_speak():
+#     try:
+#         data = request.json
+#         lang1 = data.get('src_lang', 'en').strip().lower()
+#         text = data.get('text', '').strip()
+#         lang2 = data.get('dest_lang', 'en').strip().lower()
 
-        if not text:
-            return jsonify({'message': 'Text is required for translation.', 'status': 'error'}), 400
+#         if not text:
+#             return jsonify({'message': 'Text is required for translation.', 'status': 'error'}), 400
 
-        translator = Translator()
-        translation = translator.translate(text, src=lang1, dest=lang2)
+#         translator = Translator()
+#         translation = translator.translate(text, src=lang1, dest=lang2)
 
-        audio = gTTS(text=translation.text, lang=lang2)
-        audio_file = "static/Msg.mp3"
-        audio.save(audio_file)
+#         audio = gTTS(text=translation.text, lang=lang2)
+#         audio_file = "static/Msg.mp3"
+#         audio.save(audio_file)
 
-        return jsonify({
-            'original_text': text,
-            'translated_text': translation.text,
-            'audio_url': f'/{audio_file}',
-            'status': 'success'
-        })
+#         return jsonify({
+#             'original_text': text,
+#             'translated_text': translation.text,
+#             'audio_url': f'/{audio_file}',
+#             'status': 'success'
+#         })
 
-    except Exception as e:
-        return jsonify({'message': f"An error occurred: {str(e)}", 'status': 'error'}), 500
+#     except Exception as e:
+#         return jsonify({'message': f"An error occurred: {str(e)}", 'status': 'error'}), 500
     
 
 #Fingerspell animation
@@ -283,6 +283,7 @@ def gemini_ai():
     except Exception as e:
         logging.error(f"Unexpected error: {e}")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
+
 
 
 
